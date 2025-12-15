@@ -45,15 +45,10 @@
 
         printf("Quantos Pontos turisticos: \n");
         scanf("%d", &pontos_turisticos1);
-
-        printf("Qual a densidade Populacional: \n");
-        scanf("%f", &densidade_populacional1);
-
-        printf("Qual o PIB: \n");
-        scanf("%f", &pib_per_capito1);
-
       
-        //segunda carta
+        densidade_populacional1 = ( populacao1 / area1 );// calculo da densidade populacional
+        
+        pib_per_capito1 = ( pib1 / populacao1 );// calculo do pib per capito
 
         printf("Entre com os dados da segunda carta \n");
         printf("Digite o Estado: \n");
@@ -77,12 +72,9 @@
         printf("Quantos Pontos turisticos: \n");
         scanf("%d", &pontos_turisticos2);
 
-        printf("Qual a densidade Populacional: \n");
-        scanf("%f", &densidade_populacional2);
-
-        printf("Qual o PIB: \n");
-        scanf("%f", &pib_per_capito2);
-
+        densidade_populacional2 = ( populacao2 / area2 );// calculo da densidade populacional
+       
+        pib_per_capito2 = ( pib2 / populacao2 );// calculo do pib per capito
 
         printf("1 Carta \n");
         printf("Estado: %s\n", estado1); //string
@@ -92,8 +84,11 @@
         printf("Á área é de: %f \n", area1); // float
         printf("PIB é de: %f \n", pib1); // float format padrao
         printf("Pontos turisticos: %d \n", pontos_turisticos1); // Inteiro
+        printf("Densidade Populacional é de: %f \n", densidade_populacional1);
+        printf("PIB Per Capito é de: %f \n", pib_per_capito1);
+        
  
-         printf("---------------------------------------\n");
+        printf("---------------------------------------\n");
         
         printf("2 Carta \n");
         printf("Estado: %s\n", estado2);
@@ -103,7 +98,11 @@
         printf("Á área é de: %f \n", area2);
         printf("PIB é de: %f \n", pib2);
         printf("Pontos turisticos: %d \n", pontos_turisticos2);
-
+        printf("Densidade Populacional é de: %f \n", densidade_populacional2);
+        printf("PIB Per Capito é de: %f \n", pib_per_capito2);
+        printf("Densidade Populacional é de: %f \n", densidade_populacional2);       
+        printf("PIB Per Capito é de: %f \n", pib_per_capito2);
+        
+        
         return 0;
     }
-   
